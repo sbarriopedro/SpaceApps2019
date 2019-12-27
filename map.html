@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Py.toplankton</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div id="mapTitle">
+        <h1>Py.toplankton</h1>
+        <button type="button"><a href="index.html"> Back</a></button>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+      var urlParams = new URLSearchParams(window.location.search);
+
+      var lat_search = (urlParams.get('latitude')) ? urlParams.get('latitude') : 27.519452;
+      var long_search = (urlParams.get('longitude')) ? urlParams.get('longitude') : -81.040590;
+      console.log(lat_search)
+      console.log(long_search)
+      var map;
+      
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: parseInt(lat_search), lng: parseInt(long_search)},
+          zoom: 8
+        });
+
+        const petition = new XMLHttpRequest();
+        petition.open("get", "jsons-mock/target.json");
+        petition.responseType = "json";
+        petition.send();
+        petition.addEventListener("load", function(){
+          var geodata = petition.response.points;
+          //medium 100.000
+          var lucky = geodata.filter(function(pos) {
+            return pos.cellcount != '0.0' && pos.cellcount > 1000000;
+          });
+          
+          for (i = 0; i < lucky.length; i++) {
+              var pos = {lat: lucky[i].latitude, lng: lucky[i].longitude};
+              var marker = new google.maps.Marker({
+                  position: pos,
+                  map: map,
+                  icon: {
+                      path: google.maps.SymbolPath.CIRCLE,
+                      scale: 8.5,
+                      fillColor: "#66abbf",
+                      fillOpacity: 0.5,
+                      strokeWeight: 0.4
+                  }
+              });
+            
+          }
+        })
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhxQNs40KQEQSMgssJwU4xO0VOQlyM2SY&callback=initMap"
+    async defer></script>
+  </body>
+</html>

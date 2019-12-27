@@ -1,0 +1,46 @@
+[
+    {
+        "coordinates": [
+            22,
+            30,
+            40
+        ],
+        "description": "This type of algae may wake up from the water and beat you up because you throw trash in the water and bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a",
+        "info": "More info, here goes more info about info!",
+        "location": "Buenos Aires, Argentina",
+        "id": "1"
+    },
+    {
+        "coordinates": [
+            220,
+            300,
+            400
+        ],
+        "description": "This type of algae may wake up from the water and beat you up because you throw trash in the water and bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a",
+        "info": "More info, here goes more info about info!",
+        "location": "Houston, Texas",
+        "id": "2"
+    },
+    {
+        "coordinates": [
+            202,
+            303,
+            404
+        ],
+        "description": "This type of algae may wake up from the water and beat you up because you throw trash in the water and bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a",
+        "info": "More info, here goes more info about info!",
+        "location": "Tokyo, Japan",
+        "id": "3"
+    },
+    {
+        "coordinates": [
+            222,
+            309,
+            409
+        ],
+        "description": "This type of algae may wake up from the water and beat you up because you throw trash in the water and bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a bla bla blab lab lab lal al bal balbalbal balb alb alb alb labl abla blablab l abl abl ablab labl a",
+        "info": "More info, here goes more info about info!",
+        "location": "Placeholder, Placeholderonia",
+        "id": "4"
+    }
+]
